@@ -1,0 +1,22 @@
+{
+  "name": "dancingfoxtattoo.com",
+  "version": "0.5.0",
+  "description": "Dancing Fox Tattoo Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "bundle exec jekyll serve",
+    "install": "bundle install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dancingfoxtattoo/dancingfoxtattoo.github.io.git"
+  },
+  "keywords": [
+    "dancing",
+    "fox",
+    "tattoo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://dancingfoxtattoo.com"
+}

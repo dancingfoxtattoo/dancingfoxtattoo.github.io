@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   {% include head.html %}
+
   <body>
+    <!-- HEADER -->
+    {% include header.html %}
 
-    {% unless page.contentOnly %}
-      {% include header.html %}
-    {% endunless %}
+    <!-- MAIN CONTENT -->
+    <main id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">{{ content }}</section>
+    </main>
 
-    <div class='page-content'>
-      <div class='wrapper'>
-        {{ content }}
-      </div>
-    </div>
-
-    {% unless page.contentOnly %}
-      {% include footer.html %}
-    {% endunless %}
-
+    <!-- FOOTER  -->
+    {% include footer.html %}
   </body>
 </html>

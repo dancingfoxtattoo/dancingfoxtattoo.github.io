@@ -1,4 +1,16 @@
 // Placeholder file. If your site uses
 //     @import "{{ site.theme }}";
 // Then using this theme with jekyll-remote-theme will work fine.
-@import "jekyll-theme-slate";
+// @import "jekyll-theme-slate";
+
+@import "reset";
+@import "body";
+@import "headings";
+@import "text";
+@import "lists";
+@import "code";
+@import "forms";
+@import "images";
+@import "tables";
+
+@import "content";

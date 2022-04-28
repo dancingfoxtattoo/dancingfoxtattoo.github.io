@@ -21,6 +21,8 @@
     href="{{ '/css/main.css?v=' | append: site.github.build_revision | relative_url }}"
   />
 
+  {% include head-favicon.html faviconPath="assets/images/favicon-real-fox" %}
+
   <title>
     {% if page.title %} 
       {{ page.title }} - {{ site.title }} 

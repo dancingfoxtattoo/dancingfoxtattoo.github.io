@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    <!-- HEADER -->
-    {% include header.html %}
+<body>
+  <!-- HEADER -->
+  {% include header.html %}
 
-    <!-- MAIN CONTENT -->
-    <main id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">{{ content }}</section>
-    </main>
+  <!-- MAIN CONTENT -->
+  <main id="main_content_wrap" class="outer">
+    <div id="main_content" class="inner">{{ content }}</div>
+  </main>
 
-    <!-- FOOTER  -->
-    {% include footer.html %}
-  </body>
+  <!-- FOOTER  -->
+  {% include footer.html %}
+</body>
+
 </html>

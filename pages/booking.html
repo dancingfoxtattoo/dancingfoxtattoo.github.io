@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1>Booking</h1>
+
+
+{% if site.data.booking.available %}
+
+<h2>Book now!</h2>
+
+{% else %}
+
+<h2>Booking is currently closed</h2>
+<a href="https://www.instagram.com/gina_takaoka/">
+  Check our Instagram
+</a>
+
+{% endif %}

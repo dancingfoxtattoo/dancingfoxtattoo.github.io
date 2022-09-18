@@ -1,0 +1,3 @@
+# set to true to turn on booking
+# set to false to turn off booking
+available: false

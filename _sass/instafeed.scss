@@ -1,13 +1,26 @@
-#instafeed {
-  display: flex;
-  flex-wrap: wrap;
+#instagram {
+  #instafeed {
+    display: flex;
+    flex-wrap: wrap;
 
-  a,
-  img {
-    display: block;
-    padding: 0;
-    width: 150px;
-    height: 150px;
-    margin: 0 10px 10px 0;
+    // a {
+    //   flex: 0 1 150px;
+    // }
+
+    // a,
+    // img {
+    //   display: block;
+    //   padding: 0;
+    //   margin: 0 10px 10px 0;
+    // }
+
+    a,
+    img {
+      display: block;
+      padding: 0;
+      width: 150px;
+      height: 150px;
+      margin: 0 10px 10px 0;
+    }
   }
 }

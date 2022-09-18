@@ -1,3 +1,15 @@
-#location iframe {
-  width: 95%;
+#location {
+
+  iframe,
+  img {
+    width: 95%;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  img {
+    padding: 0;
+  }
 }

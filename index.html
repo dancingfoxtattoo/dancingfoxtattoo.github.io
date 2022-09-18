@@ -2,6 +2,64 @@
 layout: default
 ---
 
-<main>
-  <p>Test</p>
-</main>
+<section id="instagram">
+  <h1>Instagram</h1>
+  <div id="instafeed"></div>
+
+  <a href="https://www.instagram.com/gina_takaoka/">
+    Follow Us on Instagram
+  </a>
+</section>
+
+<script type="text/javascript" src="/assets/js/instafeed/instafeed.min.js"></script>
+<script type="text/javascript">
+  const feed = new Instafeed({
+    apiTimeout: 5000,
+    accessTokenTimeout: 5000,
+    accessToken: (accessTokenReceiver) => {
+      const tokenParts = [
+        // ADD TOKEN HERE
+      ];
+      const accessToken = tokenParts.join('');
+      const error = null;
+      accessTokenReceiver(error, accessToken)
+    },
+    mock: false,
+    debug: false,
+    limit: 15,
+    target: 'instafeed',
+
+    template: '<a href="{link}"><img title="{caption}" src="{image}" /></a>',
+    templateBoundaries: ['{', '}'],
+
+    before: () => {
+      console.log('before');
+    },
+    success: ({ data, paging }) => {
+      console.log('success', { data, paging });
+    },
+    error: (error) => {
+      console.log('error', error);
+    },
+    transform: (imageData) => {
+      return imageData;
+    },
+    filter: (imageData) => {
+      const skipCondition = false;
+      if (skipCondition) {
+        return;
+      };
+      return imageData;
+    },
+    sort: (a, b) => {
+      const aDate = new Date(a.timestamp);
+      const bDate = new Date(b.timestamp);
+      return bDate - aDate;
+    },
+    after: () => {
+      console.log('after');
+    },
+  });
+
+  feed.run();
+</script>

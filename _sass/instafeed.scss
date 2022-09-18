@@ -1,0 +1,13 @@
+#instafeed {
+  display: flex;
+  flex-wrap: wrap;
+
+  a,
+  img {
+    display: block;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px 10px 0;
+  }
+}
